@@ -3,39 +3,50 @@ import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import Head from "next/head";
+
+export const metadata = {
+  title: 'Riat Archidecor - Alcamo',
+  description: 'Il punto di riferimento per i professionisti della riqualificazione, del restauro e della decorazione architettonica',
+  openGraph: {
+    title: 'Riat Archidecor - Alcamo',
+    description: 'Il punto di riferimento per i professionisti della riqualificazione, del restauro e della decorazione architettonica',
+    url: 'https://www.riatarchidecor.it', 
+    images: [
+      {
+        url: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+        width: 1200,
+        height: 630,
+        alt: 'Riat Archidecor - Alcamo'
+      }
+    ],
+    siteName: 'Riat Archidecor',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Riat Archidecor - Alcamo',
+    description: 'Il punto di riferimento per i professionisti della riqualificazione, del restauro e della decorazione architettonica',
+    image: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+  },
+  robots: {
+    index: true,
+    follow: true
+  },
+  additionalMetaTags: [
+    {
+      name: 'keywords',
+      content: 'riqualificazione, restauro, decorazione architettonica, Alcamo'
+    },
+    {
+      name: 'author',
+      content: 'Riat Archidecor'
+    }
+  ]
+};
+
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <meta name="description" content="Riat Archidecor - Alcamo." />
-        <meta
-          name="keywords"
-          content="riat, alcamo, forniture, stucchi, pitture, isolamento termico"
-        />
-        <meta name="robots" content="index, follow" />
-
-        <meta property="og:title" content="Riat Archidecor - Alcamo." />
-        <meta
-          property="og:description"
-          content="Il punto di riferimento per i professionisti della riqualificazione, del restauro e della decorazione architettonica"
-        />
-        <meta property="og:image" content="/img/hero62.webp" />
-        <meta property="og:url" content="https://www.riatarchidecor.it/Home/" />
-        <meta property="og:type" content="website" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Riat Archidecor - Alcamo." />
-        <meta
-          name="twitter:description"
-          content="Il punto di riferimento per i professionisti della riqualificazione, del restauro e della decorazione architettonica"
-        />
-        <meta name="twitter:image" content="/img/hero62.webp" />
-
-        <title>Riat Archidecor</title>
-      </Head>
-
       {/* HERO */}
       <div className=" w-full text-white h-[100vh] flex flex-col justify-around items-center">
         <video

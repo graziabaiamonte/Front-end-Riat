@@ -1,28 +1,48 @@
 import Image from "next/image";
-import Head from "next/head";
+
+export const metadata = {
+  title: 'Elementi Decorativi, Riat Archidecor, Alcamo',
+  description: 'Decorazioni per pareti e abbellimenti',
+  openGraph: {
+    title: 'Elementi Decorativi, Riat Archidecor, Alcamo',
+    description: 'Decorazioni per pareti e abbellimenti',
+    url: 'https://www.riatarchidecor.it/ElementiDecorativi', 
+    images: [
+      {
+        url: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+        width: 1200,
+        height: 630,
+        alt: 'Riat Archidecor - Alcamo'
+      }
+    ],
+    siteName: 'Riat Archidecor',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Elementi Decorativi, Riat Archidecor, Alcamo',
+    description: 'Decorazioni per pareti e abbellimenti',
+    image: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+  },
+  robots: {
+    index: true,
+    follow: true
+  },
+  additionalMetaTags: [
+    {
+      name: 'keywords',
+      content: 'elementi decorativi, decorazioni pareti, alcamo, riat'
+    },
+    {
+      name: 'author',
+      content: 'Riat Archidecor'
+    }
+  ]
+};
+
 
 export default function ElementiDecorativi() {
     return (
     <>
-     <Head>
-        <meta name="description" content="Elementi Decorativi, Riat Archidecor, Alcamo" />
-        <meta name="keywords" content="elementi decorativi, decorazioni pareti, alcamo, riat" />
-        <meta name="robots" content="index, follow" />
-
-        <meta property="og:title" content="Elementi Decorativi, Riat Archidecor, Alcamo" />
-        <meta property="og:description" content="Decorazioni per pareti e abbellimenti" />
-        <meta property="og:image" content="/imgFiniture/finiture.webp" />
-        <meta property="og:url" content="https://www.riatarchidecor.it/ElementiDecorativi/" />
-        <meta property="og:type" content="website" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Elementi Decorativi, Riat Archidecor, Alcamo" />
-        <meta name="twitter:description" content="Elementi Decorativi, Riat Archidecor, Alcamo" />
-        <meta name="twitter:image" content="/imgFiniture/fniture.webp" />
-
-        <title>Elementi Decorativi, Riat Archidecor, Alcamo</title>
-      </Head>
-
      {/* HERO */}
      <div className="bg-decorativiHero text-white h-[100vh] imgBackground flex flex-col justify-center">
         <div className="w-full lg:px-0 h-[100vh] flex flex-col justify-end md:justify-center items-center md:items-start relative">

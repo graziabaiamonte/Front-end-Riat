@@ -1,28 +1,47 @@
 import Image from "next/image";
-import Head from "next/head";
+
+export const metadata = {
+  title: 'Soluzioni Sostenibli - Riat Archidecor, Alcamo',
+  description: 'Il punto di riferimento per i professionisti della riqualificazione, del restauro e della decorazione architettonica',
+  openGraph: {
+    title: 'Soluzioni Sostenibli - Riat Archidecor, Alcamo',
+    description: 'Il punto di riferimento per i professionisti della riqualificazione, del restauro e della decorazione architettonica',
+    url: 'https://www.riatarchidecor.it/SoluzioniSostenibili', 
+    images: [
+      {
+        url: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+        width: 1200,
+        height: 630,
+        alt: 'Riat Archidecor - Alcamo'
+      }
+    ],
+    siteName: 'Riat Archidecor',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Soluzioni Sostenibli - Riat Archidecor, Alcamo',
+    description: 'Il punto di riferimento per i professionisti della riqualificazione, del restauro e della decorazione architettonica',
+    image: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+  },
+  robots: {
+    index: true,
+    follow: true
+  },
+  additionalMetaTags: [
+    {
+      name: 'keywords',
+      content: 'soluzioni sostenibili, ecologia, materiali sostenibili'
+    },
+    {
+      name: 'author',
+      content: 'Riat Archidecor'
+    }
+  ]
+};
 
 export default function SoluzioniSostenibili() {
     return (
     <>
-      <Head>
-        <meta name="description" content="Ti aiutiamo a costruire con consapevolezza e a ridurre l’impronta ecologica dei tuoi progetti" />
-        <meta name="keywords" content="soluzioni sostenibili, ecologia, materiali sostenibili" />
-        <meta name="robots" content="index, follow" />
-
-        <meta property="og:title" content="Soluzioni Sostenibli - Riat Archidecor, Alcamo" />
-        <meta property="og:description" content="Ti aiutiamo a costruire con consapevolezza e a ridurre l’impronta ecologica dei tuoi progetti" />
-        <meta property="og:image" content="/imgSostenibili/sostenibiliHero.webp" />
-        <meta property="og:url" content="https://www.riatarchidecor.it/SoluzioniSostenibili/" />
-        <meta property="og:type" content="website" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Soluzioni Sostenibli - Riat Archidecor, Alcamo" />
-        <meta name="twitter:description" content="Ti aiutiamo a costruire con consapevolezza e a ridurre l’impronta ecologica dei tuoi progetti" />
-        <meta name="twitter:image" content="/imgSostenibili/sostenibiliHero.webp" />
-
-        <title>Soluzioni Sostenibli - Riat Archidecor, Alcamo</title>
-      </Head>
-      
      {/* HERO */}
      <div className="bg-sostenibiliHero text-white h-[100vh] imgBackground flex flex-col justify-center">
         <div className="w-full  lg:px-0 h-[100vh]   flex flex-col justify-end md:justify-center items-center md:items-start relative">

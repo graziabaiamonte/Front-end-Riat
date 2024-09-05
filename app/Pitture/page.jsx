@@ -1,27 +1,47 @@
 import Image from "next/image";
-import Head from "next/head";
+
+export const metadata = {
+  title: 'Pitture e Smalti professionali - Riat Archidecor, Alcamo',
+  description: 'Palette di soluzioni che combinano estetica e resistenza per risultati eccezionali.',
+  openGraph: {
+    title: 'Pitture e Smalti professionali - Riat Archidecor, Alcamo',
+    description: 'Palette di soluzioni che combinano estetica e resistenza per risultati eccezionali.',
+    url: 'https://www.riatarchidecor.it/Pitture', 
+    images: [
+      {
+        url: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+        width: 1200,
+        height: 630,
+        alt: 'Riat Archidecor - Alcamo'
+      }
+    ],
+    siteName: 'Riat Archidecor',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pitture e Smalti professionali - Riat Archidecor, Alcamo',
+    description: 'Palette di soluzioni che combinano estetica e resistenza per risultati eccezionali.',
+    image: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+  },
+  robots: {
+    index: true,
+    follow: true
+  },
+  additionalMetaTags: [
+    {
+      name: 'keywords',
+      content: 'riqualificazione, restauro, decorazione architettonica, Alcamo, pitture, smalti, soluzioni sostenibili'
+    },
+    {
+      name: 'author',
+      content: 'Riat Archidecor'
+    }
+  ]
+};
 
 export default function Pitture() {
     return (
     <>
-     <Head>
-        <meta name="description" content="Pitture e Smalti professionali - Riat Archidecor, Alcamo" />
-        <meta name="keywords" content="pitture, smalti, soluzioni sostenibili" />
-        <meta name="robots" content="index, follow" />
-
-        <meta property="og:title" content="Pitture e Smalti professionali - Riat Archidecor, Alcamo" />
-        <meta property="og:description" content="Palette di soluzioni che combinano estetica e resistenza per risultati eccezionali." />
-        <meta property="og:image" content="/imgPitture/pitt.webp" />
-        <meta property="og:url" content="https://www.riatarchidecor.it/Pitture/" />
-        <meta property="og:type" content="website" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Pitture e Smalti professionali - Riat Archidecor, Alcamo" />
-        <meta name="twitter:description" content="Palette di soluzioni che combinano estetica e resistenza per risultati eccezionali." />
-        <meta name="twitter:image" content="/imgPitture/pitt.webp" />
-
-        <title>Pitture e Smalti professionali - Riat Archidecor, Alcamo</title>
-      </Head>
 
      {/* HERO */}
      <div className="bg-pittureHero text-white h-[100vh] imgBackground flex flex-col justify-center">

@@ -1,29 +1,48 @@
 import SezioneImgDestra from "../components/SezioneImgDestra";
 import SezioneImgSinistra from "../components/SezioneImgSinistra";
-import Head from "next/head";
+
+export const metadata = {
+  title: 'Corsi di formazione ed Eventi - Riat Archidecor',
+  description: 'Corsi per professionisti e appassionati',
+  openGraph: {
+    title: 'Corsi di formazione ed Eventi - Riat Archidecor',
+    description: 'Corsi per professionisti e appassionati',
+    url: 'https://www.riatarchidecor.it/ConsulenzaFormazione', 
+    images: [
+      {
+        url: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+        width: 1200,
+        height: 630,
+        alt: 'Riat Archidecor - Alcamo'
+      }
+    ],
+    siteName: 'Riat Archidecor',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Corsi di formazione ed Eventi - Riat Archidecor',
+    description: 'Corsi per professionisti e appassionati',
+    image: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+  },
+  robots: {
+    index: true,
+    follow: true
+  },
+  additionalMetaTags: [
+    {
+      name: 'keywords',
+      content: 'corsi, formazione, professionisti, appassionati, alcamo, riat'
+    },
+    {
+      name: 'author',
+      content: 'Riat Archidecor'
+    }
+  ]
+};
 
 export default function ConsulenzaFormazione() {
     return (
     <>
-    <Head>
-        <meta name="description" content="Corsi per professionisti e appassionati" />
-        <meta name="keywords" content="corsi, formazione, professionisti, appassionati, alcamo, riat" />
-        <meta name="robots" content="index, follow" />
-
-        <meta property="og:title" content="Corsi di formazione ed Eventi - Riat Archidecor" />
-        <meta property="og:description" content="Corsi per professionisti e appassionati" />
-        <meta property="og:image" content="/imgConsulenza/consulenzaa.webp" />
-        <meta property="og:url" content="https://www.riatarchidecor.it/ConsulenzaFormazione/" />
-        <meta property="og:type" content="website" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Consulenza e Formazione - Riat Archidecor" />
-        <meta name="twitter:description" content="Corsi per professionisti e appassionati" />
-        <meta name="twitter:image" content="/imgConsulenza/consulenzaa.webp" />
-
-        <title>Corsi di Formazione e Consulenza - Riat Archidecor, Alcamo</title>
-      </Head>
-
     {/* HERO */}
     <div className="bg-consulenzaHero text-white h-[100vh] imgBackground flex flex-col justify-center">
         <div className="w-full lg:px-0 h-[100vh] flex flex-col justify-end md:justify-center items-center md:items-start relative">

@@ -2,29 +2,50 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import Head from 'next/head';
+
+export const metadata = {
+  title: 'Finiture Decorative - Di cosa ci occupiamo, Riat Archidecor, Alcamo',
+  description: 'Forniamo stucchi professionali, elementi decorativi, pitture e smalti, sistemi di isolamento termico',
+  openGraph: {
+    title: 'Finiture Decorative - Di cosa ci occupiamo, Riat Archidecor, Alcamo',
+    description: 'Forniamo stucchi professionali, elementi decorativi, pitture e smalti, sistemi di isolamento termico',
+    url: 'https://www.riatarchidecor.it/FinitureDecorative', 
+    images: [
+      {
+        url: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+        width: 1200,
+        height: 630,
+        alt: 'Riat Archidecor - Alcamo'
+      }
+    ],
+    siteName: 'Riat Archidecor',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Finiture Decorative - Di cosa ci occupiamo, Riat Archidecor, Alcamo',
+    description: 'Forniamo stucchi professionali, elementi decorativi, pitture e smalti, sistemi di isolamento termico',
+    image: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+  },
+  robots: {
+    index: true,
+    follow: true
+  },
+  additionalMetaTags: [
+    {
+      name: 'keywords',
+      content: 'stucchi professionali, pitture, smalti, sistemi di isolamento termico, elementi decorativi'
+    },
+    {
+      name: 'author',
+      content: 'Riat Archidecor'
+    }
+  ]
+};
+
 
 export default function FinitureDecorative() {
     return (
     <>
-     <Head>
-        <meta name="description" content="Finiture Decorative - Di cosa ci occupiamo, Riat Archidecor, Alcamo" />
-        <meta name="keywords" content="stucchi professionali, pitture, smalti, sistemi di isolamento termico, elementi decorativi" />
-        <meta name="robots" content="index, follow" />
-
-        <meta property="og:title" content="Finiture Decorative - Di cosa ci occupiamo, Riat Archidecor, Alcamo" />
-        <meta property="og:description" content="Forniamo stucchi professionali, elementi decorativi, pitture e smalti, sistemi di isolamento termico" />
-        <meta property="og:image" content="/imgfiniture/finitureHero.webp" />
-        <meta property="og:url" content="https://www.riatarchidecor.it/FinitureDecorative/" />
-        <meta property="og:type" content="website" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Finiture Decorative - Di cosa ci occupiamo, Riat Archidecor, Alcamo" />
-        <meta name="twitter:description" content="Forniamo stucchi professionali, elementi decorativi, pitture e smalti, sistemi di isolamento termico" />
-        <meta name="twitter:image" content="/imgfiniture/finitureHero.webp" />
-
-        <title>Finiture decoratie - Riat Archidecor, Alcamo</title>
-      </Head>
 
     {/* HERO */}
     <div className="bg-finitureHero text-white h-[100vh] imgBackground flex flex-col justify-center">
@@ -37,8 +58,6 @@ export default function FinitureDecorative() {
           <div className="bg-red bg-opacity-55 h-[40px] w-full absolute -bottom-[2%]"></div>
         </div>
     </div>
-
-    
 
     {/* SEZIONE ISOLAMENTO TERMICO */}
     <div className="h-[70vh] lg:h-[100vh] w-full flex gap-2 md:gap-0 flex-col md:flex-row justify-center items-center relative mt-[25%] md:mt-0">

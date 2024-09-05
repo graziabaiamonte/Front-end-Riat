@@ -1,27 +1,48 @@
 import ContattiClient from "../components/ContattiClient";
-import Head from "next/head";
+
+export const metadata = {
+  title: 'Riat Archidecor - Alcamo',
+  description: 'Il punto di riferimento per i professionisti della riqualificazione, del restauro e della decorazione architettonica',
+  openGraph: {
+    title: 'Riat Archidecor - Alcamo',
+    description: 'Il punto di riferimento per i professionisti della riqualificazione, del restauro e della decorazione architettonica',
+    url: 'https://www.riatarchidecor.it/Contatti', 
+    images: [
+      {
+        url: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+        width: 1200,
+        height: 630,
+        alt: 'Riat Archidecor - Alcamo'
+      }
+    ],
+    siteName: 'Riat Archidecor',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Riat Archidecor - Alcamo',
+    description: 'Il punto di riferimento per i professionisti della riqualificazione, del restauro e della decorazione architettonica',
+    image: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+  },
+  robots: {
+    index: true,
+    follow: true
+  },
+  additionalMetaTags: [
+    {
+      name: 'keywords',
+      content: 'riqualificazione, restauro, decorazione architettonica, Alcamo'
+    },
+    {
+      name: 'author',
+      content: 'Riat Archidecor'
+    }
+  ]
+};
+
 
 export default async function Contatti() {
   return (
     <>
-      <Head>
-        <meta name="description" content="Corsi per professionisti e appassionati" />
-        <meta name="keywords" content="corsi, formazione, professionisti, appassionati, alcamo, riat" />
-        <meta name="robots" content="index, follow" />
-
-        <meta property="og:title" content="Corsi di formazione ed Eventi - Riat Archidecor" />
-        <meta property="og:description" content="Corsi per professionisti e appassionati" />
-        <meta property="og:image" content="/imgCorsi/formazione.webp" />
-        <meta property="og:url" content="https://www.riatarchidecor.it/Formazione/" />
-        <meta property="og:type" content="website" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contatti - Riat Archidecor" />
-        <meta name="twitter:description" content="Corsi per professionisti e appassionati" />
-        <meta name="twitter:image" content="/imgCorsi/formazione.webp" />
-
-        <title>Corsi di Formazione - Riat Archidecor, Alcamo</title>
-      </Head>
       <ContattiClient/>
     </>
   );

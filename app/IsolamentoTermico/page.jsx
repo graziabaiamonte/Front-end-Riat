@@ -1,28 +1,47 @@
 import Image from "next/image";
-import Head from "next/head";
+
+export const metadata = {
+  title: 'Isolamento Termico - Riat Archidecor, Alcamo',
+  description: 'Scopri come possiamo aiutarti a mantenere la temperatura ideale e ridurre l’impatto ambientale.',
+  openGraph: {
+    title: 'Isolamento Termico - Riat Archidecor, Alcamo',
+    description: 'Scopri come possiamo aiutarti a mantenere la temperatura ideale e ridurre l’impatto ambientale.',
+    url: 'https://www.riatarchidecor.it/IsolamentoTermico', 
+    images: [
+      {
+        url: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+        width: 1200,
+        height: 630,
+        alt: 'Riat Archidecor - Alcamo'
+      }
+    ],
+    siteName: 'Riat Archidecor',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Isolamento Termico - Riat Archidecor, Alcamo',
+    description: 'Scopri come possiamo aiutarti a mantenere la temperatura ideale e ridurre l’impatto ambientale.',
+    image: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+  },
+  robots: {
+    index: true,
+    follow: true
+  },
+  additionalMetaTags: [
+    {
+      name: 'keywords',
+      content: 'riqualificazione, restauro, decorazione architettonica, Alcamo, isolamento termico, soluzioni sostenibili, green'
+    },
+    {
+      name: 'author',
+      content: 'Riat Archidecor'
+    }
+  ]
+};
 
 export default function IsolamentoTermico() {
     return (
     <>
-      <Head>
-        <meta name="description" content="Scopri come possiamo aiutarti a mantenere la temperatura ideale e ridurre l’impatto ambientale." />
-        <meta name="keywords" content="isolamento termico, soluzioni sostenibili, green" />
-        <meta name="robots" content="index, follow" />
-
-        <meta property="og:title" content="Isolamento Termico - Riat Archidecor, Alcamo" />
-        <meta property="og:description" content="Scopri come possiamo aiutarti a mantenere la temperatura ideale e ridurre l’impatto ambientale." />
-        <meta property="og:image" content="/imgIsolamento/isolamentoHero.jpeg" />
-        <meta property="og:url" content="https://www.riatarchidecor.it/IsolamentoTermico/" />
-        <meta property="og:type" content="website" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Isolamento Termico - Riat Archidecor, Alcamo" />
-        <meta name="twitter:description" content="Scopri come possiamo aiutarti a mantenere la temperatura ideale e ridurre l’impatto ambientale.." />
-        <meta name="twitter:image" content="/imgIsolamento/isolamentoHero.jpeg" />
-
-        <title>Contatti - Riat Archidecor, Alcamo</title>
-      </Head>
-
      {/* HERO */}
      <div className="bg-isolamentoHero text-white h-[100vh] imgBackground flex flex-col justify-center">
         <div className="w-full  lg:px-0 h-[100vh]   flex flex-col justify-end md:justify-center items-center md:items-start relative">

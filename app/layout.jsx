@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, Suspense } from "react";
+import { useEffect, useRef} from "react";
 import Footer from "./components/Footer";
 import NavHome from "./components/NavHome";
 import Nav from "./components/Nav";

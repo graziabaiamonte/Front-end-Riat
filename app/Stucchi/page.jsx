@@ -1,28 +1,47 @@
 import Image from "next/image";
-import Head from "next/head";
+
+export const metadata = {
+  title: 'Stucchi Professionali eleganza senza tempo, dettagli sofisticati e finiture impeccabili',
+  description: 'Stucchi Professionali eleganza senza tempo, dettagli sofisticati e finiture impeccabili',
+  openGraph: {
+    title: 'Stucchi Professionali eleganza senza tempo, dettagli sofisticati e finiture impeccabili',
+    description: 'Stucchi Professionali eleganza senza tempo, dettagli sofisticati e finiture impeccabili',
+    url: 'https://www.riatarchidecor.it/Stucchi', 
+    images: [
+      {
+        url: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+        width: 1200,
+        height: 630,
+        alt: 'Riat Archidecor - Alcamo'
+      }
+    ],
+    siteName: 'Riat Archidecor',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Stucchi Professionali eleganza senza tempo, dettagli sofisticati e finiture impeccabili',
+    description: 'Stucchi Professionali eleganza senza tempo, dettagli sofisticati e finiture impeccabili',
+    image: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+  },
+  robots: {
+    index: true,
+    follow: true
+  },
+  additionalMetaTags: [
+    {
+      name: 'keywords',
+      content: 'riqualificazione, restauro, decorazione architettonica, Alcamo, stucchi professionali, dettagli, riat, alcamo'
+    },
+    {
+      name: 'author',
+      content: 'Riat Archidecor'
+    }
+  ]
+};
 
 export default function Stucchi() {
     return (
     <>
-     <Head>
-        <meta name="description" content="Stucchi Professionali eleganza senza tempo, dettagli sofisticati e finiture impeccabili" />
-        <meta name="keywords" content="stucchi professionali, dettagli, riat, alcamo" />
-        <meta name="robots" content="index, follow" />
-
-        <meta property="og:title" content="Stucchi professionali - Riat Archidecor" />
-        <meta property="og:description" content="Stucchi Professionali eleganza senza tempo, dettagli sofisticati e finiture impeccabili" />
-        <meta property="og:image" content="/imgStucchi/stucchiHero.webp" />
-        <meta property="og:url" content="https://www.riatarchidecor.it/Stucchi/" />
-        <meta property="og:type" content="website" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Stucchi professionali - Riat Archidecor" />
-        <meta name="twitter:description" content="Stucchi Professionali eleganza senza tempo, dettagli sofisticati e finiture impeccabili" />
-        <meta name="twitter:image" content="/imgStucchi/stucchiHero.jpeg" />
-
-        <title>Stucchi professionali - Riat Archidecor</title>
-      </Head>
-
     {/* HERO */}
     <div className="bg-stucchiHero text-white h-[100vh] imgBackground flex flex-col justify-center">
         <div className="w-full  lg:px-0 h-[100vh]   flex flex-col justify-end md:justify-center items-center md:items-start relative">

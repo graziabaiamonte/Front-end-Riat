@@ -15,6 +15,8 @@ import CardCorsiEventiArrivo from '../components/CorsiEventiArrivo';
 import { fetchAllCorsi, fetchAllEventi } from '@/api/fetchCorso';
 
 
+
+
 export default function FormazioneClient() {
   const [eventi, setEventi] = useState(null);
   const [corsi, setCorsi] = useState(null);

@@ -26,7 +26,7 @@ export default function NavHome() {
     return (
         <header className={`fixed w-full ${scrolled ? 'bg-white' : 'bg-transparent'} transition-colors duration-500 ease-in-out z-50`}>
                 <nav className="flex justify-around items-center ">
-                    <div className=" flex w-full justify-between items-center pl-2 lg:pl-20 py-4 ml-[4px] lg:ml-[24px]">
+                    <div className=" flex w-full justify-between items-center pl-2 lg:pl-20 ">
                         <Link href="/">
                             <Image src="/logo.webp" alt="Logo" width={250} height={250} 
                             className='w-[120px] lg:w-[250px]'

@@ -1,28 +1,48 @@
 import Image from "next/image";
-import Head from "next/head";
+
+export const metadata = {
+  title: 'I nostri valori - Riat Archidecor, Alcamo',
+  description: 'Il punto di riferimento per i professionisti della riqualificazione, del restauro e della decorazione architettonica',
+  openGraph: {
+    title: 'I nostri valori: sostenibilià, design e creatività, qualità',
+    description: 'Il punto di riferimento per i professionisti della riqualificazione, del restauro e della decorazione architettonica',
+    url: 'https://www.riatarchidecor.it/Valori', 
+    images: [
+      {
+        url: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+        width: 1200,
+        height: 630,
+        alt: 'Riat Archidecor - Alcamo'
+      }
+    ],
+    siteName: 'Riat Archidecor',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'I nostri valori: sostenibilià, design e creatività, qualità',
+    description: 'Il punto di riferimento per i professionisti della riqualificazione, del restauro e della decorazione architettonica',
+    image: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+  },
+  robots: {
+    index: true,
+    follow: true
+  },
+  additionalMetaTags: [
+    {
+      name: 'keywords',
+      content: 'riqualificazione, restauro, decorazione architettonica, Alcamo, valori, in cosa crediamo, qualità, materiali sostenibili, ecologia, design, creatività'
+    },
+    {
+      name: 'author',
+      content: 'Riat Archidecor'
+    }
+  ]
+};
+
 
 export default function Valori() {
     return (
     <>
-     <Head>
-        <meta name="description" content="I nostri valori: sostenibilià, design e creatività, qualità" />
-        <meta name="keywords" content="valori, in cosa crediamo, qualità, materiali sostenibili, ecologia, design, creatività" />
-        <meta name="robots" content="index, follow" />
-
-        <meta property="og:title" content="I nostri valori - Riat Archidecor, Alcamo" />
-        <meta property="og:description" content="I nostri valori: sostenibilià, design e creatività, qualità" />
-        <meta property="og:image" content="/imgValori/valori.webp" />
-        <meta property="og:url" content="https://www.riatarchidecor.it/Valori/" />
-        <meta property="og:type" content="website" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="I nostri valori - Riat Archidecor, Alcamo" />
-        <meta name="twitter:description" content="I nostri valori: sostenibilià, design e creatività, qualità" />
-        <meta name="twitter:image" content="/imgValori/valori.webp" />
-
-        <title>I nostri valori - Riat Archidecor, Alcamo</title>
-      </Head>
-
     {/* HERO */}
     <div className="bg-valoriHero text-white h-[100vh] imgBackground flex flex-col justify-end items-center relative">
         <div className="w-full py-8 px-4 bg-red h-[30px] mb-[5%] flex flex-col justify-center items-center">
