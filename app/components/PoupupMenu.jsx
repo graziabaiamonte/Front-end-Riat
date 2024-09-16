@@ -30,7 +30,7 @@ export default function PoupupMenu({showHamburger,setShowHamburger}){
                 <Link href="/">
                     <Image src="/logo.webp" alt="Logo" width={100} height={100} className='w-[70px] lg:w-[120px]'/>
                 </Link>
-                <h6>info@archidecor.com</h6>
+                <h6>info@riatarchidecor.it</h6>
                 <h6>338/4850318</h6>
                 <h6>0924/24428</h6>
                 <h6>Riat Store, ss 113 km 326 </h6>
