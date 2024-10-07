@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export const metadata = {
   title: 'Elementi Decorativi, Riat Archidecor, Alcamo',
   description: 'Decorazioni per pareti e abbellimenti',
@@ -62,7 +62,9 @@ export default function ElementiDecorativi() {
         <h2 className="fontPrimary w-full lg:w-[40%] text-text text-base lg:text-xl 2xl:text-2xl text-center mb-4">
         Scopri la magia dei nostri elementi decorativi, realizzati con la qualità garantita dal nostro partner principale Noel & Marquet
         </h2>
-        <Image src="/imgDecorativi/noel-logo.webp" width={200} height={200} alt="logo partner oikos"/>
+        <Link target="_blank" rel="noopener noreferrer" href="https://noel-marquet.it/architects/">
+          <Image src="/imgDecorativi/noel-logo.webp" width={200} height={200} alt="logo partner oikos"/>
+        </Link>
      </div>
 
      {/* SEZIONE FOTO PICCOLE DESTRA */}
@@ -107,7 +109,10 @@ export default function ElementiDecorativi() {
         <h2 className="fontPrimary w-full lg:w-[40%] text-text text-base lg:text-xl 2xl:text-2xl text-center mb-4">
         La bellezza prende forma con i nostri dettagli ornamentali, realizzati in collaborazione con Orac, sinonimo di eccellenza.
         </h2>
-        <Image src="/imgDecorativi/orac-logo.webp" width={100} height={100} alt="logo partner Orac"/>
+        <Link target="_blank" rel="noopener noreferrer" href="https://www.oracdecor.com/it_it/">
+            <Image src="/imgDecorativi/orac-logo.webp" width={100} height={100} alt="logo partner Orac"/>
+        </Link>
+        
      </div>
 
       {/* SEZIONE FOTO PICCOLE SINISTRA */}

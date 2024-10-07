@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export const metadata = {
   title: 'Stucchi Professionali eleganza senza tempo, dettagli sofisticati e finiture impeccabili',
   description: 'Stucchi Professionali eleganza senza tempo, dettagli sofisticati e finiture impeccabili',
@@ -62,7 +62,10 @@ export default function Stucchi() {
         <h2 className="fontPrimary w-full lg:w-[40%] text-text text-base lg:text-xl 2xl:text-2xl text-center mb-4">
           Per finiture perfette, scegli i nostri stucchi di qualità, sviluppati insieme alla rinomata azienda Baixens
         </h2>
-        <Image src="/imgStucchi/baixens-logo.webp" width={200} height={200} alt="logo partner oikos"/>
+        <Link target="_blank" rel="noopener noreferrer" href="https://www.baixens.com/">
+            <Image src="/imgStucchi/baixens-logo.webp" width={200} height={200} alt="logo partner oikos"/>
+        </Link>
+       
       </div>
 
       {/* SEZIONE FOTO (PICCOLE A SINISTRA) ---immagini cliccabili per ingrandirle?(solo in mobile casomai) */}
@@ -113,7 +116,10 @@ export default function Stucchi() {
         <h2 className="fontPrimary w-full lg:w-[40%] text-text text-base lg:text-xl 2xl:text-2xl text-center mb-4">
         Rendi ogni dettaglio unico con i nostri stucchi, frutto della collaborazione con il nostro partner di fiducia, Italcover
         </h2>
-        <Image src="/imgStucchi/italcover-logo.webp" width={200} height={200} alt="logo partner Ital Cover"/>
+        <Link target="_blank" rel="noopener noreferrer" href="https://colorificioitalcover.it/">
+            <Image src="/imgStucchi/italcover-logo.webp" width={200} height={200} alt="logo partner Ital Cover"/>
+        </Link>
+        
       </div>
 
       {/* SEZIONE FOTO (PICCOLE A DESTRA)*/}
