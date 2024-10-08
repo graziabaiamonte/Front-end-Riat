@@ -62,9 +62,18 @@ export default function ElementiDecorativi() {
         <h2 className="fontPrimary w-full lg:w-[40%] text-text text-base lg:text-xl 2xl:text-2xl text-center mb-4">
         Scopri la magia dei nostri elementi decorativi, realizzati con la qualità garantita dal nostro partner principale Noel & Marquet
         </h2>
-        <Link target="_blank" rel="noopener noreferrer" href="https://noel-marquet.it/architects/">
-          <Image src="/imgDecorativi/noel-logo.webp" width={200} height={200} alt="logo partner oikos"/>
-        </Link>
+        <div className="flex gap-[10%] flex-col md:flex-row ">
+           <Link target="_blank" rel="noopener noreferrer" href="https://noel-marquet.it/architects/">
+              <Image src="/imgDecorativi/noel-logo.webp" width={200} height={200} alt="logo partner oikos"/>
+           </Link>
+
+            <Link  target="_blank" rel="noopener noreferrer" href="https://www.infoaffreschi.com/">
+                <Image src="/imgPitture/affreschiLogo.png" width={200} height={200} alt="logo partner Affreschi & Affreschi"
+                className="mt-[3%] 2xl:mt-[1%] "
+                />
+              </Link>
+        </div>
+       
      </div>
 
      {/* SEZIONE FOTO PICCOLE DESTRA */}

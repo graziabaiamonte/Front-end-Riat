@@ -72,15 +72,10 @@ export default function Pitture() {
      {/* PRIMA SEZIONE */}
      <div className="md:h-[100vh] w-full px-4 lg:px-12 flex gap-6 md:gap-0 flex-col-reverse md:flex-row justify-center items-center relative">
         <div className="w-[90%] lg:w-[50%] flex flex-col items-end">
-          <p className="fontSecondary text-text pt-[5%] w-full lg:ml-[30%] text-right text-sm md:text-xl">
+          <p className="fontSecondary mb-[5%] text-text pt-[5%] w-[70&] lg:ml-[30%] text-right text-sm md:text-xl">
           Scopri la brillantezza e la resistenza delle nostre pitture, progettate per offrire finiture 
           impeccabili e durature, perfezionando ogni superficie con un tocco di eleganza.
           </p>
-          <Link  target="_blank" rel="noopener noreferrer" href="https://www.infoaffreschi.com/">
-            <Image src="/imgPitture/affreschiLogo.png" width={200} height={200} alt="logo partner Affreschi & Affreschi"
-            className="mt-[3%] 2xl:mt-[1%] "
-             />
-          </Link>
         </div>
         <div className="w-[90%] lg:w-[50%] flex justify-center mx-[36px]">
           <Image src="/imgPitture/pitture1.webp" width={800} height={800} alt="foto dell'azienda"
