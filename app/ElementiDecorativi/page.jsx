@@ -60,7 +60,7 @@ export default function ElementiDecorativi() {
      {/* SEZIONE LOGO PARTNER*/}
      <div className="h-[50vh] md:h-[70vh] flex flex-col justify-center items-center px-4 lg:px-12 ">
         <h2 className="fontPrimary w-full lg:w-[40%] text-text text-base lg:text-xl 2xl:text-2xl text-center mb-4">
-        Scopri la magia dei nostri elementi decorativi, realizzati con la qualità garantita dal nostro partner principale Noel & Marquet
+        Scopri la magia dei nostri elementi decorativi, realizzati con la qualità garantita dal nostri partner Noel & Marquet e Affreschi e Affreschi
         </h2>
         <div className="flex gap-[10%] flex-col md:flex-row ">
            <Link target="_blank" rel="noopener noreferrer" href="https://noel-marquet.it/architects/">
