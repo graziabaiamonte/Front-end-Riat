@@ -19,7 +19,7 @@ export default function Footer() {
             {/* credit */}
             <div className="w-full flex -mt-[46px] md:mt-0 justify-center">
                 <p className="text-text  text-center px-4 text-sm fontPrimary">Designed by
-                    <Link target="_blank" href="www.adduma.it">Adduma
+                    <Link target="_blank" href="https://www.adduma.it"> Adduma
                     </Link>, with care, coffee and love. </p>
             </div>
         </div>
