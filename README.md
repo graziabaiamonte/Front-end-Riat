@@ -10,7 +10,7 @@ Sito sviluppato per il cliente Riat Arichidecor, punto di riferimento per i prof
 - **Sistema di Contatto**: Invio email diretto tramite EmailJS
 - **Performance Ottimizzate**: Build ottimizzate con Next.js
 
-##f 🛠️ Tecnologie e Strumenti
+## 🛠️ Tecnologie
 
 - **Next.js**
 - **Tailwind CSS**
