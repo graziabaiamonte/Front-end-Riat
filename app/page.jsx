@@ -10,10 +10,10 @@ export const metadata = {
   openGraph: {
     title: 'Riat Archidecor - Alcamo',
     description: 'Il punto di riferimento per i professionisti della riqualificazione, del restauro e della decorazione architettonica',
-    url: 'https://www.riatarchidecor.it', 
+    url: 'https://www.riatarchidecor.it',
     images: [
       {
-        url: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+        url: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg',
         width: 1200,
         height: 630,
         alt: 'Riat Archidecor - Alcamo'
@@ -25,7 +25,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Riat Archidecor - Alcamo',
     description: 'Il punto di riferimento per i professionisti della riqualificazione, del restauro e della decorazione architettonica',
-    image: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg', 
+    image: 'https://www.riatarchidecor.it/wp/wp-content/uploads/2024/07/favignana4.jpg',
   },
   robots: {
     index: true,
